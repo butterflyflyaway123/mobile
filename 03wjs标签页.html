@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap基本模板</title>
+
+    <!-- Bootstrap -->
+    <link href="./lib/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+     /*  div[class^='container'] {
+       height: 40px;
+       background-color: pink;
+       margin-bottom: 20px;
+     } */
+      .tab .tab-content{
+        border: 1px solid #ccc;
+        height: auto;
+        width: 100%;
+        padding-top: 20px;
+      }
+      .tab .nav-tabs>li.active>a {
+        cursor: pointer;
+      }
+      .tab .nav-tabs{
+        background-color: lightpink;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>所有代码在这里写</h1> -->
+
+    <!-- 布局容器 -->
+
+    <!-- 1. container 他是一个响应式的布局容器 根据不同的设备宽度 有不同的固定宽度 -->
+    <div class="tab">
+    <div class="container">
+        <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">1111
+      少年不知愁滋味,爱上层楼,爱上层楼,为赋新词强说愁
+        少年不知愁滋味,爱上层楼,爱上层楼,为赋新词强说愁
+          少年不知愁滋味,爱上层楼,爱上层楼,为赋新词强说愁
+            少年不知愁滋味,爱上层楼,爱上层楼,为赋新词强说愁
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">2222</div>
+    <div role="tabpanel" class="tab-pane" id="messages">333</div>
+    <div role="tabpanel" class="tab-pane" id="settings">444</div>
+  </div>
+
+</div>
+      <div>
+
+
+    </div>
+
+    </div>
+
+
+
+    <!-- 按钮 -->
+    <!-- .btn-default 默认按钮的样式 -->
+    <!-- <a href="javascript:;" class="btn btn-default">链接按钮</a> -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./lib/js/jQuery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./lib/js/bootstrap.min.js"></script>
+  </body>
+</html>

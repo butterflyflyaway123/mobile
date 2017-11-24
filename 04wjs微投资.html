@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap基本模板</title>
+
+    <!-- Bootstrap -->
+    <link href="./lib/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    /*   div[class^='container'] {
+      height: 40px;
+      background-color: pink;
+      margin-bottom: 20px;
+    } */
+    body,html,ul,{
+      margin: 0;
+      padding: 0;
+
+    }
+    li{
+      list-style: none;
+    }
+    .tab .nav-tabs {
+      background-color: pink;
+      width: 100%;
+    }
+    .tab .tab-content {
+      width: 100%;
+      height: auto;
+    }
+    
+    .tab .tab-content .item{
+      width: 100%;
+      height: 190px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0px 10px  rgba(0, 0, 0,0.6);
+      margin: 10px 25px 25px ;
+      text-align: center;
+      background-color: #eee;
+      overflow: hidden;
+    }
+    .tab .tab-content .item:first-child{
+      margin-left: 0px;
+    }
+
+    .item ._left{
+      width: 80%;
+      height: 100%;
+     background-color: yellow;
+     float: left;
+     overflow: hidden;
+    }
+    .item ._left .it_l{
+      float: left;
+    }
+     .item ._left .it_r{
+      float: right;
+    }
+    .item ._right{
+      width: 20%;
+      height: 100%;
+       border-left: 1px dashed #000;
+       background: yellowgreen;
+       box-sizing: border-box;
+       float: right;
+       text-align: center;
+       vertical-align: middle;
+       padding-top: 70px;
+       box-sizing: border-box;
+    }
+    .item h3 {
+        font-size: 20px;
+        color: #333;
+        text-decoration: underline;
+    }
+    .item li{
+      color: #333;
+      font-size: 16px;
+      height: 30px;
+      line-height: 30px;
+    }
+    .item ._left .it_l li{
+    margin-left: -30px;
+    } 
+    
+  
+  
+    </style>
+  </head>
+  <body>
+    <!-- <h1>所有代码在这里写</h1> -->
+
+
+    <!-- 2.container-fluid 他是一个自适应的布局容器  根据不同的设备宽度 它的宽度一直不变 就是100% -->
+    <div class="tab">
+      <div class="container-fluid">
+      <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">特别推荐</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+
+    <div role="tabpanel" class="tab-pane active" id="home">
+
+      <!-- 特别推荐 -->
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+          <!-- 第一个列表项 -->
+          <div class="item">
+             <div class="_left" >
+              <h3>新手体验</h3>
+              <ul class="it_l">
+               <li>起始投资</li>
+                <li>0.01万</li>
+                <li>借款期限</li>
+                 <li>10天</li>
+            </ul>
+
+             <ul class="it_r">
+              <li>起投金额</li>
+               <li>0.01万</li>
+              <li>借款期限</li>
+              <li>10天</li>
+            </ul>
+            </div>
+           <!-- end _left -->
+            <div class="_right">
+              <i>8</i>
+              <p>年利率</p>
+            </div>
+          </div>
+        </div>
+        <!-- end col -->
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <!-- 第二个列表项 -->
+          <div class="item">
+             <div class="_left" >
+              <h3>新手体验</h3>
+              <ul class="it_l">
+               <li>起始投资</li>
+                <li>0.01万</li>
+                <li>借款期限</li>
+                 <li>10天</li>
+            </ul>
+
+             <ul class="it_r">
+              <li>起投金额</li>
+               <li>0.01万</li>
+              <li>借款期限</li>
+              <li>10天</li>
+            </ul>
+            </div>
+           <!-- end _left -->
+            <div class="_right">
+              <i>8</i>
+              <p>年利率</p>
+            </div>
+          </div>
+        </div>
+        <!-- end col -->
+          <!-- 第三个列表项 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="item">
+             <div class="_left" >
+              <h3>新手体验</h3>
+              <ul class="it_l">
+               <li>起始投资</li>
+                <li>0.01万</li>
+                <li>借款期限</li>
+                 <li>10天</li>
+            </ul>
+
+             <ul class="it_r">
+              <li>起投金额</li>
+               <li>0.01万</li>
+              <li>借款期限</li>
+              <li>10天</li>
+            </ul>
+            </div>
+           <!-- end _left -->
+            <div class="_right">
+              <i>8</i>
+              <p>年利率</p>
+            </div>
+          </div>
+        </div>
+        <!-- end col -->
+      <!-- 第四个列表项 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="item">
+             <div class="_left" >
+              <h3>新手体验</h3>
+              <ul class="it_l">
+               <li>起始投资</li>
+                <li>0.01万</li>
+                <li>借款期限</li>
+                 <li>10天</li>
+            </ul>
+
+             <ul class="it_r">
+              <li>起投金额</li>
+               <li>0.01万</li>
+              <li>借款期限</li>
+              <li>10天</li>
+            </ul>
+            </div>
+           <!-- end _left -->
+            <div class="_right">
+              <i>8</i>
+              <p>年利率</p>
+            </div>
+          </div>
+        </div>
+        <!-- end col -->
+      </div>
+      <!-- end row -->
+    </div>
+
+
+    <div role="tabpanel" class="tab-pane" id="profile">
+      少年不知愁滋味
+    </div>
+    <div role="tabpanel" class="tab-pane" id="messages">爱上层楼</div>
+    <div role="tabpanel" class="tab-pane" id="settings">爱上层楼,为赋新词强说愁</div>
+  </div>
+
+</div>
+    </div>
+    </div>
+
+    </div>
+    
+
+
+
+
+    <!-- 按钮 -->
+    <!-- .btn-default 默认按钮的样式 -->
+    <!-- <a href="javascript:;" class="btn btn-default">链接按钮</a> -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./lib/js/jQuery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./lib/js/bootstrap.min.js"></script>
+  </body>
+</html>

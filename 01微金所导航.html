@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap基本模板</title>
+
+    <!-- Bootstrap -->
+    <link href="./lib/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+    /*   div[class^='container'] {
+      height: 40px;
+      background-color: pink;
+      margin-bottom: 20px;
+    } */
+    .wjs_nav .navbar {
+      width: 100%;
+      height: 80px;
+    } 
+    .wjs_nav .navbar-nav>li>a{
+      height: 80px;
+      line-height: 80px;
+      padding: 0 15px;
+    }
+    .wjs_nav .navbar-nav li{
+      position: relative;
+    }
+    .wjs_nav .navbar-nav b{
+       position: absolute;
+       left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 3px;
+      background-color: red;
+     opacity: 0;
+    }
+    /*   .wjs_nav .navbar-nav li:hover > b{
+    opacity: 1;
+        } */
+         .navbar-default .navbar-nav>li:hover > b{
+          opacity: 1;
+         }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>所有代码在这里写</h1> -->
+
+    <!-- 布局容器 -->
+
+    <!-- 1. container 他是一个响应式的布局容器 根据不同的设备宽度 有不同的固定宽度 -->
+  <div class="wjs_nav">
+     <nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="">
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">我要投资</a><b></b></li>
+        <li><a href="#">我要借贷</a><b></b></li>
+        <li><a href="#">平台介绍</a><b></b></li>
+        <li><a href="#">新手专区</a> <b></b></li>
+        <li><a href="#">最新动态</a><b></b></li>
+        <li><a href="#">微平台</a><b></b></li>
+      
+        </li>
+      </ul>
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">个人中心</a><b></b></li>
+       
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+</div>
+
+ 
+
+    
+
+
+
+    <!-- 按钮 -->
+    <!-- .btn-default 默认按钮的样式 -->
+    <!-- <a href="javascript:;" class="btn btn-default">链接按钮</a> -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./lib/js/jQuery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./lib/js/bootstrap.min.js"></script>
+  </body>
+</html>
